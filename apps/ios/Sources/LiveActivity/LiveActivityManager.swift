@@ -15,7 +15,14 @@ final class LiveActivityManager {
         self.hydrateCurrentAndPruneDuplicates()
     }
 
-    var isActive: Bool { self.currentActivity != nil }
+    var isActive: Bool {
+        guard let activity = self.currentActivity else { return false }
+        guard activity.activityState == .active else {
+            self.currentActivity = nil
+            return false
+        }
+        return true
+    }
 
     func startActivity(agentName: String, sessionKey: String) {
         self.hydrateCurrentAndPruneDuplicates()
