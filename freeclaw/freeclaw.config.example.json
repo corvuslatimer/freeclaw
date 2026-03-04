@@ -8,5 +8,7 @@
   "workspace": "/root/.openclaw/workspace",
   "stateDir": "./.freeclaw-state",
   "maxToolRounds": 6,
-  "requireRoot": true
+  "requireRoot": true,
+  "contextRoot": ".",
+  "contextFiles": ["SOUL.md", "TOOLS.md", "MEMORY.md", "AGENTS.md", "USER.md", "HEARTBEAT.md"]
 }

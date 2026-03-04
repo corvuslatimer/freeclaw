@@ -1,17 +1,13 @@
 # FreeClaw
 
-Minimal, unrestricted agent runtime.
+This repository is intentionally organized under a single folder:
 
-## Scope
-- Providers: OpenAI, Anthropic
-- Channel: Telegram
-- Tools: exec, read, write, fetch
-- Execution: root-first (`requireRoot: true`)
-- Personality/memory context files: `SOUL.md`, `TOOLS.md`, `MEMORY.md`, `AGENTS.md`, `USER.md`, `HEARTBEAT.md`
+- `freeclaw/` → all runtime code, config templates, systemd example, and context files (`SOUL.md`, `TOOLS.md`, `MEMORY.md`, `AGENTS.md`, `USER.md`, `HEARTBEAT.md`, `memory/`).
 
-## Quick start
+## Run
+
 ```bash
+cd freeclaw
 cp freeclaw.config.example.json freeclaw.config.json
-# set keys/tokens
-npm run start
+node index.mjs
 ```

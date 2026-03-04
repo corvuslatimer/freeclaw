@@ -1,9 +1,0 @@
-{
-  "name": "freeclaw-runtime",
-  "private": true,
-  "type": "module",
-  "description": "Minimal unrestricted runtime: OpenAI + Anthropic + Telegram",
-  "scripts": {
-    "start": "node index.mjs"
-  }
-}
