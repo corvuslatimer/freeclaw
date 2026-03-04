@@ -7,6 +7,7 @@ Minimal, unrestricted agent runtime.
 - Channel: Telegram
 - Tools: exec, read, write, fetch
 - Execution: root-first (`requireRoot: true`)
+- Personality/memory context files: `SOUL.md`, `TOOLS.md`, `MEMORY.md`, `AGENTS.md`, `USER.md`, `HEARTBEAT.md`
 
 ## Quick start
 ```bash
