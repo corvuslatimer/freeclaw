@@ -1,0 +1,16 @@
+[Unit]
+Description=FreeClaw (unrestricted root agent)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/freeclaw
+Environment=FREECLAW_CONFIG=/opt/freeclaw/freeclaw.config.json
+ExecStart=/usr/bin/node /opt/freeclaw/index.mjs
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
